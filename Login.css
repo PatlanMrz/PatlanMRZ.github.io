@@ -1,0 +1,132 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('IMAGES/bg-login-coffa.jpg');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-position: center;
+    background-attachment: fixed;
+    animation: moveBackground 60s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 500px;
+        /* Puedes ajustar la distancia */
+    }
+}
+
+/*lo deje hasta el fondo movible*/
+
+.form_register {
+    width: 400px;
+    padding: 80px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    background: #1c2833;
+    font-family: "Calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form_register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.registers {
+    width: 250px;
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #5C4033;
+    font-family: 'Calibri';
+    font-size: 15px;
+    color: white;
+}
+
+.form_register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form_register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form_register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form_register .botons {
+    width: 250px;
+    background: #5C4033;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+select.registers option {
+    background: #5C4033;
+    /* Fondo oscuro para las opciones */
+}
+
+.fecha-container {
+    display: flex;
+    gap: 5px;
+    /* Espacio entre selects */
+    width: 250px;
+}
+
+.fecha-container select {
+    flex: 1;
+    /* Ocupa espacio equitativo */
+    background: none;
+    padding: 10px;
+    border: 1px solid #5C4033;
+    color: white;
+    border-radius: 5px;
+}
+
+#error_email,
+#error_password {
+    color: red;
+    display: none;
+    margin-top: 5px;
+    /* Reduce el espacio arriba */
+    margin-bottom: 5px;
+    /* Reduce el espacio debajo */
+    font-size: 0.9em;
+    /* Opcional: ajustar el tamaño de la fuente */
+}
+
+.nota-telefono {
+    display: block;
+    /* Para que aparezca en una línea aparte */
+    font-size: 0.8em;
+    /* Letras más pequeñas */
+    color: #aaa;
+    /* Tono opaco (gris claro) */
+    margin-top: 3px;
+    /* Un pequeño espacio entre el input y la nota */
+    margin-bottom: 10px;
+    /* Espacio debajo de la nota para el siguiente elemento */
+}

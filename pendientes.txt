@@ -1,0 +1,6 @@
+verificar si en la db se requiren los campos unicos o valido desde JS o desde PHP
+hacer mi pagina de index y redireccionar despues de registro correcto
+
+
+Poner una pagina para el perfil del usuario.
+Terminar de desarrollar la página principal

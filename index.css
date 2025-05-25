@@ -1,0 +1,58 @@
+h1 {
+    font-size: 100px;
+    color: #fff;
+    position: relative;
+}
+
+body {
+    background-image: url('IMAGES/bg-login-coffa.jpg');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-position: center;
+    background-attachment: fixed;
+    animation: moveBackground 60s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 500px;
+        /* Puedes ajustar la distancia */
+    }
+}
+
+p {
+    font-size: 40px;
+}
+
+.btn {
+    background: #866650;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.wrap {
+    width: 2003px;
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(IMAGES/main-img-index.jpg);
+    background-size: center;
+    background-position: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.wrap-texto {
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}

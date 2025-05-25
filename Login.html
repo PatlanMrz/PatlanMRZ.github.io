@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="h_and_f.css">
+
+    <title>Login</title>
+
+</head>
+
+<!--HEADER-->
+<header>
+    <div class="logo">
+
+        <img src="IMAGES/logo-coffa.png">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">ACERCA DE</a></li>
+            <li><a href="#">MENÚ</a></li>
+            <li><a href="#">CARRITO</a></li>
+            <li><a href="#">CONTACTANOS</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <section class="form_register">
+        <h4>Registrarse</h4>
+        <label for="phone" class="nota-telefono">* campos obligatorios</label>
+        <!--DATOS PERSONALES PARA EL USUARIO-->
+        <form action="index.php" name="coffa" method="post" onsubmit="return validarCampos()">
+            <label for="names">Nombre(s)*</label>
+            <input class="registers" type="text" name="names" id="names" placeholder="Nombre(s)*"
+                oninput="formatearNombre(this)">
+
+            <label for="ap_p">Apellido paterno*</label>
+            <input class="registers" type="text" name="ap_paterno" id="ap_p" placeholder="Apellido paterno*"
+                oninput="formatearApellido(this)" onkeypress="return soloLetras(event)">
+
+            <label for="ap_m">Apellido materno*</label>
+            <input class="registers" type="text" name="ap_materno" id="ap_m" placeholder="Apellido materno*"
+                oninput="formatearApellido(this)" onkeypress="return soloLetras(event)">
+
+
+            <!--FECHA DE NACIMIENTO-
+            <div class="fecha-container">
+
+                <select class="registers" name="mes" id="mes">
+                    <option value="" disabled selected>Mes</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosoto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+
+                <select class="registers" name="dia" id="dia">
+                    <option value="" disabled selected>Día</option>
+                </select>
+
+            </div>   -->
+
+            <!--DATOS DE CONTACTO-->
+            <label for="em">Correo electrónico*</label>
+            <input class="registers" type="email" name="email" id="em" placeholder="Correo electrónico*">
+            <span id="error_email" style="color: red; display: none;">Los correos electrónicos no coinciden.</span>
+
+            <label for="r_em">Repetir correo electrónico*</label>
+            <input class="registers" type="email" name="r_email" id="r_em" placeholder="Repetir correo electrónico*">
+
+            <label for="pho">Telefono celular</label>
+            <label for="phone" class="nota-telefono">(ej.+52-55-7996-7029)</label>
+            <input class="registers" type="text" name="phone" id="pho" placeholder="Telefono celular"
+                oninput="formatearTelefono(this)" onkeypress="return soloNumeros(event)" maxlength="16">
+
+            <!--PAÍS, ESTADO Y ALCALDÍA 
+        <select class="registers" name="pais" id="pais" required>
+            <option value="" disabled selected>Selecciona tú país*</option>
+            <option value="MX">México</option>
+            <option value="US">Estados Unidos</option>
+        </select>
+
+        <select class="registers" name="estado" id="estado" disabled required>
+            <option value="" disabled selected>Primero selecciona un país*</option>
+        </select>
+
+        <select class="registers" name="alcaldia" id="alcaldia" disabled required>
+            <option value="" disabled selected>Primero selecciona un estado*</option>
+        </select>
+
+        -->
+
+            <!--USERNAME & PASSWORD-->
+            <label for="usern">Nombre de usuario*</label>
+            <input class="registers" type="text" name="username" id="usern" placeholder="Nombre de usuario*">
+            <label for="cont">Contraseña*</label>
+            <input class="registers" type="password" name="contraseña" id="cont" placeholder="Contraseña*">
+            <span id="error_password" style="color: red; display: none;">Las contraseñas no coinciden.</span>
+            <label for="r_cont">Repetir contraseña*</label>
+            <input class="registers" type="password" name="r_contraseña" id="r_cont" placeholder="Repetir contraseña*">
+
+
+            <!--TERMINOS & CONDICIONES-->
+            <p>Acepto <a href="#">terminos y condiciones</a></p>
+            <input id="botons" class="botons" type="submit" name="registro">
+            <p><a href="Logout.html">Ya tengo una cuenta</a></p>
+
+        </form>
+    </section>
+
+
+    <script src="Login.js"></script>
+</body>
+
+<!--FOOTER-->
+<footer>
+    <h3>&copy; all right reserves</h3>
+</footer>
+
+</html>

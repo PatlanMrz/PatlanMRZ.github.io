@@ -1,0 +1,20 @@
+<?php
+
+
+if (isset($_POST["registro"])) {
+
+    $name_s = $_POST["name_s"];
+    $ap_paterno = $_POST["ap_paterno"];
+    $ap_materno = $_POST["ap_materno"];
+    $email = $_POST["email"];
+    $phone = !empty($_POST["phone"]) ? $_POST["phone"] : NULL;
+    $username = $_POST["username"];
+    $contraseña = $_POST["contraseña"];
+
+    $insertar_datos = "INSERT INTO usuario VALUES('', '$name_s', '$ap_paterno', '$ap_materno', '$email', '$phone', '$username', '$contraseña')";
+
+    $ejecutar_insertar = mysqli_query($enlace, $insertar_datos);
+}
+
+
+value="Registrar"

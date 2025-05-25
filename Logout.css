@@ -1,0 +1,92 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url('/pagina/IMAGES/bg-login-coffa.jpg');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-position: center;
+    background-attachment: fixed;
+    animation: moveBackground 60s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 500px;
+
+    }
+}
+
+
+/*lo deje hasta el fondo movible*/
+
+.logout {
+    width: 400px;
+    padding: 80px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    background: #1c2833;
+    font-family: "Calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.logout h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.registers {
+    width: 250px;
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #5C4033;
+    font-family: 'Calibri';
+    font-size: 15px;
+    color: white;
+}
+
+.logout p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.logout a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logout .botons {
+    width: 250px;
+    background: #5C4033;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+select.registers option {
+    background: #5C4033;
+    /* Fondo oscuro para las opciones */
+}
